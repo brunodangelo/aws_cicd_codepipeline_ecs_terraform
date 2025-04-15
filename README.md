@@ -10,12 +10,11 @@ Despliegue de Aplicación con ECS Fargate, utilizando CICD con CodePipeline y Co
 * 1 ECR repository
 * 1 CodePipeline
 * 1 CodeBuild
-* 2 Auto Scaling groups
 * 1 Load Balancer
 * 1 Targets groups
 * 1 LB Listeners
 * 2 App Auto Scaling policies
-* 2 CloudWatch Alarm
+* 2 CloudWatch Alarms
 * 1 VPC
 * 2 Public Subnets
 * 1 Internet Gateway
