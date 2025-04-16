@@ -47,7 +47,7 @@ resource "aws_codepipeline" "pipeline" {
       input_artifacts  = ["source_output"]
       output_artifacts = ["build_output"]
       configuration = {
-        ProjectName = "cb-app-cicd"
+        ProjectName = var.project_name
       }
     }
   }
@@ -62,8 +62,8 @@ resource "aws_codepipeline" "pipeline" {
       version          = "1"
       input_artifacts  = ["build_output"]
       configuration = {
-        ClusterName = "ecs-cluster-cicd"
-        ServiceName = "app-cicd-service"
+        ClusterName = var.cluster_name
+        ServiceName = var.service_name
       }
     }
   }
